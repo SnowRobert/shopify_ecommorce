@@ -176,40 +176,40 @@ function DesktopHeader({
   return (
     <header role="banner" className={styles.container}>
       <div className="flex gap-12">
-        <Link className={`font-bold`} to="https://www.theivylbny.com/">
+        <Link className={`font-bold`} to="/">
           {/* {title} */}
           <div className="pt-6">
             <Image
-              src="https://www.theivylbny.com/images/the-ivy.png"
+              src="/imgs/logo.png"
               width={108}
-              height={55}
+              height={65}
               alt="The Ivy logo"
             />
           </div>
         </Link>
-        <div className="pt-8 text-neon-pink font-medium text-base">
-          <nav className="flex gap-8">
+        <div className="pt-8 text-[#14394f]font-medium text-base">
+          <nav className="flex gap-8 items-center">
             {/* Top level menu items */}
             {/* {(menu?.items || []).map((item) => (
               <Link key={item.id} to={item.to} target={item.target}>
-                <div className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                <div className="text-[#14394f]hover:bg-gradient-to-b from-[#14394f]via-[#14394f]to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                   {item.title}
                 </div>
               </Link>
             ))} */}
             {/* 👆 OG 👇 NEW */}
-            <Link to="/">
-              <div className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-                Shop Home
-              </div>
-            </Link>
             <Link to="/products">
-              <div className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-                Catalog
+              <div className="text-black px-3 py-2 rounded-md text-base font-medium">
+                Shop
               </div>
             </Link>
-            <Link to="https://www.theivylbny.com/event-list">
-              <div className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+            <Link to="/story">
+              <div className="text-black px-3 py-2 rounded-md text-base font-medium">
+                Our Story
+              </div>
+            </Link>
+            <Link to="/event">
+              <div className="text-black px-3 py-2 rounded-md text-base font-medium">
                 Events
               </div>
             </Link>

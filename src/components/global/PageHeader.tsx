@@ -16,7 +16,8 @@ export function PageHeader({
   [key: string]: any;
 }) {
   const variants: Record<string, string> = {
-    default: 'grid w-full gap-8 p-6 py-8 md:p-8 lg:p-12 justify-items-start',
+    default:
+      'flex justify-center w-full gap-8 p-6 py-8 md:p-8 lg:p-12 justify-items-start',
     blogPost:
       'grid md:text-center w-full gap-4 p-6 py-8 md:p-8 lg:p-12 md:justify-items-center',
     allCollections:
@@ -32,7 +33,7 @@ export function PageHeader({
           as="h1"
           width="narrow"
           size="heading"
-          className="inline-block font-thin text-4xl"
+          className="inline-block font-thin text-4xl text-center"
         >
           {heading}
         </Heading>

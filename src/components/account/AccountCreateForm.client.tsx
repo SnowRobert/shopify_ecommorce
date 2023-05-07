@@ -74,7 +74,7 @@ export function AccountCreateForm() {
           <div className="mb-3">
             <input
               className={`mb-1 appearance-none rounded border w-full py-2 px-3 text-primary/90 placeholder:text-primary/50 leading-tight focus:shadow-outline ${
-                emailError ? ' border-red-500' : 'border-gray-900'
+                emailError ? ' border-[#14394f]' : 'border-gray-900'
               }`}
               id="email"
               name="email"
@@ -93,13 +93,13 @@ export function AccountCreateForm() {
             {!emailError ? (
               ''
             ) : (
-              <p className={`text-red-500 text-xs`}>{emailError} &nbsp;</p>
+              <p className={`text-[#14394f] text-xs`}>{emailError} &nbsp;</p>
             )}
           </div>
           <div className="mb-3">
             <input
               className={`mb-1 appearance-none rounded border w-full py-2 px-3 text-primary/90 placeholder:text-primary/50 leading-tight focus:shadow-outline ${
-                passwordError ? ' border-red-500' : 'border-gray-900'
+                passwordError ? ' border-[#14394f]' : 'border-gray-900'
               }`}
               id="password"
               name="password"
@@ -117,12 +117,12 @@ export function AccountCreateForm() {
             {!passwordError ? (
               ''
             ) : (
-              <p className={`text-red-500 text-xs`}>{passwordError} &nbsp;</p>
+              <p className={`text-[#14394f] text-xs`}>{passwordError} &nbsp;</p>
             )}
           </div>
           <div className="flex items-center justify-between">
             <button
-              className="bg-neon-pink text-contrast rounded py-2 px-4 focus:shadow-outline block w-full"
+              className="bg-[#14394f] text-contrast rounded py-2 px-4 focus:shadow-outline block w-full"
               type="submit"
             >
               Create Account
@@ -131,7 +131,7 @@ export function AccountCreateForm() {
           <div className="flex items-center mt-4">
             <p className="align-baseline text-sm">
               Already have an account? &nbsp;
-              <Link className="inline underline text-neon-pink" to="/account">
+              <Link className="inline underline text-[#14394f]" to="/account">
                 Sign in
               </Link>
             </p>

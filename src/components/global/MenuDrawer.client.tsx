@@ -40,17 +40,17 @@ function MenuMobileNav({
         </Link>
       ))} */}
       <Link to="/">
-        <div className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium text-center">
+        <div className="text-[#14394f] hover:bg-gradient-to-b from-[#14394f] via-[#14394f] to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium text-center">
           Shop Home
         </div>
       </Link>
       <Link to="/products">
-        <div className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium text-center">
+        <div className="text-[#14394f] hover:bg-gradient-to-b from-[#14394f] via-[#14394f] to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium text-center">
           Catalog
         </div>
       </Link>
       <Link to="https://www.theivylbny.com/event-list">
-        <div className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium text-center">
+        <div className="text-[#14394f] hover:bg-gradient-to-b from-[#14394f] via-[#14394f] to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium text-center">
           Events
         </div>
       </Link>

@@ -68,11 +68,11 @@ function HomepageContent() {
       {primaryHero && (
         <Hero {...primaryHero} height="full" top loading="eager" />
       )}
-      <ProductSwimlane
+      {/* <ProductSwimlane
         data={featuredProducts.nodes}
         title="Featured Products"
         divider="bottom"
-      />
+      /> */}
       {secondaryHero && <Hero {...secondaryHero} />}
       <FeaturedCollections
         data={featuredCollections.nodes}

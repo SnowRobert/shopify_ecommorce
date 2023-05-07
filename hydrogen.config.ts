@@ -6,7 +6,7 @@ export default defineConfig({
     defaultLanguageCode: 'EN',
     storeDomain: import.meta.env.PUBLIC_STORE_DOMAIN,
     storefrontToken: import.meta.env.PUBLIC_STOREFRONT_API_TOKEN,
-    storefrontApiVersion: '2022-07',
+    storefrontApiVersion: '2023-04',
   },
   session: CookieSessionStorage('__session', {
     path: '/',

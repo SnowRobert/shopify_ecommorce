@@ -12,7 +12,7 @@ const mockProducts = new Array(12).fill('');
 export function ProductSwimlane({
   title = 'Featured Products',
   data = mockProducts,
-  count = 12,
+  count = 10,
   ...props
 }) {
   const productCardsMarkup = useMemo(() => {
@@ -36,8 +36,8 @@ export function ProductSwimlane({
   }, [count, data]);
 
   return (
-    <Section heading={title} padding="y" {...props}>
-      <div className="swimlane hiddenScroll md:pb-8 md:scroll-px-8 lg:scroll-px-12 md:px-8 lg:px-12">
+    <Section heading={title} padding="y" className="px-[40px]" {...props}>
+      <div className="swimlane hiddenScroll md:pb-8 md:scroll-px-8 lg:scroll-px-12">
         {productCardsMarkup}
       </div>
     </Section>
@@ -47,13 +47,17 @@ export function ProductSwimlane({
 function ProductCards({products}: {products: Product[]}) {
   return (
     <>
-      {products.map((product) => (
-        <ProductCard
-          product={product}
-          key={product.id}
-          className={'snap-start w-80'}
-        />
-      ))}
+      {products.map((product, index) =>
+        index > 4 ? (
+          <ProductCard
+            product={product}
+            key={product.id}
+            className={'snap-start w-80'}
+          />
+        ) : (
+          ''
+        ),
+      )}
     </>
   );
 }

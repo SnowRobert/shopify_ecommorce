@@ -55,11 +55,11 @@ export function ProductCard({
   return (
     <Link onClick={onClick} to={`/products/${product.handle}`}>
       <div className={styles}>
-        <div className="card-image aspect-[4/5] bg-primary/5">
+        <div className="card-image aspect-[4/5] bg-primary/5 ">
           <Text
             as="label"
             size="fine"
-            className="absolute top-0 right-0 m-4 text-right text-notice font-thin"
+            className="absolute top-0 right-0 m-4 text-right text-notice font-thin flex flex-col justify-center items-center"
           >
             {cardLabel}
           </Text>
@@ -81,9 +81,9 @@ export function ProductCard({
             />
           )}
         </div>
-        <div className="grid gap-1">
+        <div className="gap-1 flex flex-col justify-center items-center">
           <Text
-            className="w-full overflow-hidden whitespace-nowrap text-ellipsis"
+            className="w-full overflow-hidden whitespace-nowrap text-ellipsis text-center"
             as="h3"
           >
             {product.title}

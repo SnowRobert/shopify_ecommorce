@@ -171,12 +171,12 @@ function EmailField({
         {!emailError ? (
           ''
         ) : (
-          <p className={`text-red-500 text-xs`}>{emailError} &nbsp;</p>
+          <p className={`text-[#14394f] text-xs`}>{emailError} &nbsp;</p>
         )}
       </div>
       <div className="flex items-center justify-between">
         <button
-          className="bg-neon-pink rounded text-contrast py-2 px-4 focus:shadow-outline block w-full"
+          className="bg-[#14394f] rounded text-contrast py-2 px-4 focus:shadow-outline block w-full"
           type="submit"
         >
           Sign in
@@ -186,7 +186,7 @@ function EmailField({
         <p className="align-baseline text-sm mt-6">
           New to The Ivy? &nbsp;
           <Link
-            className="inline underline text-neon-pink"
+            className="inline underline text-[#14394f]"
             to="/account/register"
           >
             Create an account
@@ -243,7 +243,7 @@ function PasswordField({
       <div className="mb-3">
         <input
           className={`mb-1 appearance-none rounded border w-full py-2 px-3 text-primary/90 placeholder:text-primary/50 leading-tight focus:shadow-outline ${
-            passwordError ? ' border-red-500' : 'border-gray-900'
+            passwordError ? ' border-[#14394f]' : 'border-gray-900'
           }`}
           id="password"
           name="password"
@@ -263,7 +263,7 @@ function PasswordField({
         {!passwordError ? (
           ''
         ) : (
-          <p className={`text-red-500 text-xs`}> {passwordError} &nbsp;</p>
+          <p className={`text-[#14394f] text-xs`}> {passwordError} &nbsp;</p>
         )}
       </div>
       <div className="flex items-center justify-between">
