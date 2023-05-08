@@ -1,24 +1,23 @@
-name: Deploy Shopify Hydrogen Application
+
+name: CI
+​
 on:
-  push:
-    branches:
-      - main # can be changed to any branch you prefer
+    push:
+        branches: [ master ]
+    
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
+    deploy:
+        runs-on: self-hosted
+    
+    strategy: 
+        matrix:
+            node-version: [12.x]
+            
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Setup Node.js
-      uses: actions/setup-node@v2.1.5
-      with:
-        node-version: 14.x
-    - name: Build
-      run: npm install && npm run build
-    - name: Deploy
-      uses: SnowRobert/shopify_ecommorce
-      # with:
-      #   store: ${{ secrets.STORE }}
-      #   api-key: ${{ secrets.API_KEY }}
-      #   api-password: ${{ secrets.API_PASSWORD }}
-      #   theme-id: ${{ secrets.THEME_ID }}
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+            node-version: ${{ matrix.node-version }}
+      - run: npm install
+      - run: npm run build --if-present
