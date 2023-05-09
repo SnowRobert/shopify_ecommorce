@@ -1,9 +1,10 @@
 import {defineConfig} from 'vite';
 import hydrogen from '@shopify/hydrogen/plugin';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   base: "./",
-  plugins: [hydrogen()],
+  plugins: [hydrogen(), react()],
   resolve: {
     alias: [{find: /^~\/(.*)/, replacement: '/src/$1'}],
   },
