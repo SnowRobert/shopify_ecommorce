@@ -2,7 +2,7 @@ import {defineConfig} from 'vite';
 import hydrogen from '@shopify/hydrogen/plugin';
 
 export default defineConfig({
-  base: "/shopify_ecommorce/",
+  base: "./",
   plugins: [hydrogen()],
   resolve: {
     alias: [{find: /^~\/(.*)/, replacement: '/src/$1'}],
